@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Order • Base Lace</title>
+    <link
+      rel="icon"
+      type="image/x-icon"
+      href="https://images2.imgbox.com/09/5f/psFwQtIC_o.png"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD"
+      crossorigin="anonymous"
+    />
+    <style>
+      /* #a76953 #4c1a1a #efdecd */
+
+      .center {
+        text-align: center;
+      }
+
+      .maroon-background {
+        background-color: #4c1a1a;
+        color: #efdecd;
+      }
+
+      .cocoa-background {
+        background-color: #a76953;
+        color: #efdecd;
+      }
+
+      .maroon-text {
+        color: #4c1a1a;
+      }
+
+      .catchphrase {
+        font-size: 50px;
+        font-weight: 100;
+      }
+
+      .sub-catchphrase {
+        font-size: 25px;
+        font-weight: 100;
+      }
+
+      .title-text {
+        font-size: 50px;
+        font-weight: 400;
+      }
+
+      hr.dotted {
+        border-top: 3px dotted #4c1a1a;
+      }
+
+      .links {
+        text-decoration: none;
+        color: #a76953;
+      }
+
+      .footer {
+        background-color: #efdecd;
+        color: #4c1a1a;
+      }
+
+      .copyrights {
+        background-color: #a76953;
+        color: #efdecd;
+      }
+
+      .submit {
+        width: 25%;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Logo and stuff at the top -->
+
+    <div class="container-fluid">
+      <div class="row maroon-background">
+        <div class="col-sm-2 d-flex align-items-center">
+          <a href="/Homework-3/index.html">
+            <img
+              src="https://images2.imgbox.com/38/a3/tXUu9NHK_o.png"
+              alt="logo"
+              height="200px"
+          /></a>
+        </div>
+        <div class="col-sm-10 align-self-center">
+          <h1 class="catchphrase">UNIQUE LACE ACCESSORIES</h1>
+          <h1 class="sub-catchphrase">Traditionally handmade in Poland.</h1>
+        </div>
+      </div>
+    </div>
+
+    <!-- Navigation bar with a dropdown -->
+
+    <nav class="navbar navbar-expand-lg" style="background-color: #efdecd">
+      <div class="container-fluid">
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNavDropdown"
+          aria-controls="navbarNavDropdown"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div
+          class="collapse navbar-collapse justify-content-center"
+          id="navbarNavDropdown"
+        >
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a
+                class="nav-link"
+                aria-current="page"
+                href="/Homework-3/about.html"
+                >About</a
+              >
+            </li>
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                Products
+              </a>
+              <ul class="dropdown-menu">
+                <li>
+                  <a class="dropdown-item" href="/Homework-3/nymphaea.html"
+                    >Nymphaea</a
+                  >
+                </li>
+                <li>
+                  <a class="dropdown-item" href="/Homework-3/narsissus.html"
+                    >Narsissus</a
+                  >
+                </li>
+                <li>
+                  <a class="dropdown-item" href="/Homework-3/echeveria.html"
+                    >Echeveria</a
+                  >
+                </li>
+                <li>
+                  <a class="dropdown-item" href="/Homework-3/myosotis.html"
+                    >Myosotis</a
+                  >
+                </li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/Homework-3/order.html">Order</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Order form -->
+
+    <br /><br />
+
+    <div class="container-fluid cocoa-background center">
+      <form class="row p-5">
+        <div class="col-4">
+          <label for="fname">First name:</label><br />
+          <input
+            type="text"
+            name="fname"
+            id="first-name"
+            placeholder="John"
+            pattern="{A-Za-z}"
+            required
+          />
+
+          <br /><br />
+
+          <label for="sname">Surname:</label><br />
+          <input
+            type="text"
+            name="sname"
+            id="surname"
+            placeholder="Smith"
+            pattern="{A-Za-z}"
+            required
+          />
+
+          <br /><br />
+
+          <label for="phone">Phone number:</label><br />
+          <input
+            type="number"
+            name="phone"
+            id="mobile"
+            placeholder="07576 358291"
+            pattern="{0-9}{9}"
+            required
+          />
+
+          <br /><br />
+
+          <label for="email">Email address:</label><br />
+          <input
+            type="email"
+            name="email"
+            id="email-address"
+            placeholder="john@email.com"
+            required
+          />
+        </div>
+
+        <br /><br />
+
+        <div class="col-4">
+          <label for="fname">Address line 1:</label><br />
+          <input
+            type="text"
+            name="address1"
+            id="address-one"
+            placeholder="The Green Man"
+            required
+          />
+
+          <br /><br />
+
+          <label for="sname">Address line 2:</label><br />
+          <input
+            type="text"
+            name="address2"
+            id="address-two"
+            placeholder="355 Bromley Rd"
+          />
+
+          <br /><br />
+
+          <label for="phone">City:</label><br />
+          <input
+            type="text"
+            name="phone"
+            id="mobile"
+            placeholder="London"
+            pattern="{A-Za-z}"
+            required
+          />
+
+          <br /><br />
+
+          <label for="email">Postcode:</label><br />
+          <input
+            type="text"
+            name="postcode"
+            id="postcode"
+            placeholder="SE6 2RP"
+            required
+          />
+        </div>
+
+        <br /><br />
+
+        <div class="col-4">
+          <label for="amount">Order details</label><br />
+          <textarea id="w3review" name="w3review" rows="10" cols="40">
+Please specify the model, colour and quantity for each design: </textarea
+          >
+        </div>
+
+        <button
+          class="submit d-grid gap-2 col-6 mx-auto mt-5"
+          type="button"
+          onclick="alert('Thank you! Your order will now be processed.')"
+        >
+          Submit
+        </button>
+      </form>
+    </div>
+
+    <br /><br />
+
+    <!-- Footer -->
+
+    <div class="footer">
+      <div class="container d-flex justify-content-center pb-3">
+        <div class="row">
+          <div class="col-md-3 pt-5 pb-3">
+            <h3 class="white">Address</h3>
+            <address class="white">
+              Centre of Koniakow Lace<br />Koniakow 704<br />43-474
+            </address>
+            <p class="white">
+              +48 535 328 291<br /><a
+                href="https://centrumkoronkikoniakowskiej.pl/"
+                class="links"
+                target="_blank"
+                >Centre of Koniakow Lace website</a
+              >
+            </p>
+          </div>
+          <div class="col-md-1 pt-4 pb-3"></div>
+          <div class="col-md-3 pt-5 pb-3">
+            <h3 class="white">Follow</h3>
+            <p class="white">
+              Our
+              <a
+                href="https://www.instagram.com/base_lace/"
+                class="links"
+                target="_blank"
+                >Instagram</a
+              >
+              will keep you updated, so you will not miss any news, offers and
+              new product releases.
+            </p>
+            <a
+              href="https://www.instagram.com/base_lace/"
+              class="btn btn-dark mt-2"
+              target="_blank"
+              >Check it out!</a
+            >
+          </div>
+          <div class="col-md-3 pt-4 pb-3"></div>
+          <div class="col-md-2 pt-5 pb-3">
+            <a href="/Homework-3/index.html">
+              <img
+                src="https://images2.imgbox.com/4d/02/3BxO9mPg_o.png"
+                alt="logo"
+                height="175px"
+            /></a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Copyrights -->
+
+    <div class="copyrights">
+      <div class="container-fluid d-flex justify-content-center pt-1 pb-1">
+        2022 &copy Base Lace | All rights reserved.
+      </div>
+    </div>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

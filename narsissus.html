@@ -1,0 +1,525 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Echeveria • Base Lace</title>
+    <link
+      rel="icon"
+      type="image/x-icon"
+      href="https://images2.imgbox.com/09/5f/psFwQtIC_o.png"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD"
+      crossorigin="anonymous"
+    />
+    <style>
+      /* #a76953 #4c1a1a #efdecd */
+
+      .center {
+        text-align: center;
+      }
+
+      .maroon-background {
+        background-color: #4c1a1a;
+        color: #efdecd;
+      }
+
+      .maroon-text {
+        color: #4c1a1a;
+      }
+
+      .catchphrase {
+        font-size: 50px;
+        font-weight: 100;
+      }
+
+      .sub-catchphrase {
+        font-size: 25px;
+        font-weight: 100;
+      }
+
+      .title-text {
+        font-size: 50px;
+        font-weight: 400;
+      }
+
+      hr.dotted {
+        border-top: 3px dotted #4c1a1a;
+      }
+
+      .links {
+        text-decoration: none;
+        color: #a76953;
+      }
+
+      .footer {
+        background-color: #efdecd;
+        color: #4c1a1a;
+      }
+
+      .copyrights {
+        background-color: #a76953;
+        color: #efdecd;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Logo and stuff at the top -->
+
+    <div class="container-fluid">
+      <div class="row maroon-background">
+        <div class="col-sm-2 d-flex align-items-center">
+          <a href="/Homework-3/index.html">
+            <img
+              src="https://images2.imgbox.com/38/a3/tXUu9NHK_o.png"
+              alt="logo"
+              height="200px"
+          /></a>
+        </div>
+        <div class="col-sm-10 align-self-center">
+          <h1 class="catchphrase">UNIQUE LACE ACCESSORIES</h1>
+          <h1 class="sub-catchphrase">Traditionally handmade in Poland.</h1>
+        </div>
+      </div>
+    </div>
+
+    <!-- Navigation bar with a dropdown -->
+
+    <nav class="navbar navbar-expand-lg" style="background-color: #efdecd">
+      <div class="container-fluid">
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNavDropdown"
+          aria-controls="navbarNavDropdown"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div
+          class="collapse navbar-collapse justify-content-center"
+          id="navbarNavDropdown"
+        >
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a
+                class="nav-link"
+                aria-current="page"
+                href="/Homework-3/about.html"
+                >About</a
+              >
+            </li>
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                Products
+              </a>
+              <ul class="dropdown-menu">
+                <li>
+                  <a class="dropdown-item" href="/Homework-3/nymphaea.html"
+                    >Nymphaea</a
+                  >
+                </li>
+                <li>
+                  <a class="dropdown-item" href="/Homework-3/narsissus.html"
+                    >Narsissus</a
+                  >
+                </li>
+                <li>
+                  <a class="dropdown-item" href="/Homework-3/echeveria.html"
+                    >Echeveria</a
+                  >
+                </li>
+                <li>
+                  <a class="dropdown-item" href="/Homework-3/myosotis.html"
+                    >Myosotis</a
+                  >
+                </li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/Homework-3/order.html">Order</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Accordion within offcanvas from the right -->
+
+    <div class="row p-5">
+      <div class="col-7">
+        <div id="carouselExampleIndicators" class="carousel slide">
+          <div class="carousel-indicators">
+            <button
+              type="button"
+              data-bs-target="#carouselExampleIndicators"
+              data-bs-slide-to="0"
+              class="active"
+              aria-current="true"
+              aria-label="Slide 1"
+            ></button>
+            <button
+              type="button"
+              data-bs-target="#carouselExampleIndicators"
+              data-bs-slide-to="1"
+              aria-label="Slide 2"
+            ></button>
+            <button
+              type="button"
+              data-bs-target="#carouselExampleIndicators"
+              data-bs-slide-to="2"
+              aria-label="Slide 3"
+            ></button>
+          </div>
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img
+                src="https://images2.imgbox.com/f8/30/6H8DKoxA_o.jpg"
+                class="d-block w-100"
+                alt="Front"
+              />
+            </div>
+            <div class="carousel-item">
+              <img
+                src="https://images2.imgbox.com/06/c0/fB32eYAn_o.jpg"
+                class="d-block w-100"
+                alt="Closeup"
+              />
+            </div>
+            <div class="carousel-item">
+              <img
+                src="https://images2.imgbox.com/6b/1e/9LkiZmbg_o.jpg"
+                class="d-block w-100"
+                alt="Angle"
+              />
+            </div>
+          </div>
+          <button
+            class="carousel-control-prev"
+            type="button"
+            data-bs-target="#carouselExampleIndicators"
+            data-bs-slide="prev"
+          >
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button
+            class="carousel-control-next"
+            type="button"
+            data-bs-target="#carouselExampleIndicators"
+            data-bs-slide="next"
+          >
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+      </div>
+      <div class="col-1"></div>
+      <div class="col-4 maroon-text">
+        <h1 class="title-text">Narsissus</h1>
+        <br />
+        <p class="sub-catchphrase">
+          Explore our range of jewellery, currently available in four unique
+          patterns and colours, providing space for expressing yourself with
+          luxurious crafted items.
+        </p>
+        <br />
+        <p class="sub-catchphrase">
+          Choose from our four signature colours: Ebony, Almond, Coconut and
+          Merlot.
+        </p>
+        <br /><br />
+
+        <!-- Accordion within offcanvas -->
+        <button
+          class="btn btn-dark btn-lg"
+          type="button"
+          data-bs-toggle="offcanvas"
+          data-bs-target="#offcanvasRight"
+          aria-controls="offcanvasRight"
+        >
+          Product details
+        </button>
+        <div
+          class="offcanvas offcanvas-end"
+          tabindex="-1"
+          id="offcanvasRight"
+          aria-labelledby="offcanvasRightLabel"
+        >
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="offcanvasRightLabel">Echeveria</h5>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="offcanvas"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="offcanvas-body">
+            <div class="accordion accordion-flush" id="accordionFlushExample">
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="flush-headingOne">
+                  <button
+                    class="accordion-button collapsed"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#flush-collapseOne"
+                    aria-expanded="false"
+                    aria-controls="flush-collapseOne"
+                  >
+                    Materials and dimensions
+                  </button>
+                </h2>
+                <div
+                  id="flush-collapseOne"
+                  class="accordion-collapse collapse"
+                  aria-labelledby="flush-headingOne"
+                  data-bs-parent="#accordionFlushExample"
+                >
+                  <div class="accordion-body">
+                    The necklaces are created with Arabic thread weaved around
+                    silver rings that measure 3 centimetres in diameter.
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="flush-headingTwo">
+                  <button
+                    class="accordion-button collapsed"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#flush-collapseTwo"
+                    aria-expanded="false"
+                    aria-controls="flush-collapseTwo"
+                  >
+                    Care instructions
+                  </button>
+                </h2>
+                <div
+                  id="flush-collapseTwo"
+                  class="accordion-collapse collapse"
+                  aria-labelledby="flush-headingTwo"
+                  data-bs-parent="#accordionFlushExample"
+                >
+                  <div class="accordion-body">
+                    To ensure its longevity, protect the necklace from moisture
+                    - take it off before bathing, especially avoiding contact
+                    with detergents. When the threads are wet, they become
+                    especially prone to damage, and detergents such as shower
+                    gel or hair conditioner can block the treads' fibres and
+                    prevent them from drying, causing them to lose their
+                    original shape. We understand that the necklace might
+                    require cleaning sometimes - in this case, mix laundry
+                    detergent into warm water and shake the necklace in the
+                    mixture while holding it by the pendant bail. Dry well and
+                    avoid washing your jewellery too often - similarly to
+                    textiles, the more we wash them, the more colour and texture
+                    they lose.
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="flush-headingThree">
+                  <button
+                    class="accordion-button collapsed"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#flush-collapseThree"
+                    aria-expanded="false"
+                    aria-controls="flush-collapseThree"
+                  >
+                    Packaging
+                  </button>
+                </h2>
+                <div
+                  id="flush-collapseThree"
+                  class="accordion-collapse collapse"
+                  aria-labelledby="flush-headingThree"
+                  data-bs-parent="#accordionFlushExample"
+                >
+                  <div class="accordion-body">
+                    All orders arrive in bags handsewn by us.
+                    <br />
+                    <img
+                      class="pt-3"
+                      src="https://images2.imgbox.com/19/7f/8w0XJ77q_o.jpg"
+                      alt="bags"
+                      width="330px"
+                    />
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <hr class="dotted" />
+    <br />
+
+    <div class="container-fluid center">
+      <h1>Discover all our products:</h1>
+    </div>
+
+    <br /><br />
+
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col">
+          <div class="card" style="width: 18rem">
+            <img
+              src="https://images2.imgbox.com/2c/b2/3RnmxnB8_o.jpg"
+              class="card-img-top"
+              alt="Nymphaea"
+            />
+            <div class="card-body">
+              <h5 class="card-title">Nymphaea</h5>
+              <p class="card-text">
+                A hypnotising pattern that matches your dynamic.
+              </p>
+            </div>
+            <a href="/Homework-3/nymphaea.html" class="btn btn-dark"
+              >See more</a
+            >
+          </div>
+        </div>
+        <div class="col">
+          <div class="card" style="width: 18rem">
+            <img
+              src="https://images2.imgbox.com/6b/1e/9LkiZmbg_o.jpg"
+              class="card-img-top"
+              alt="Narsissus"
+            />
+            <div class="card-body">
+              <h5 class="card-title">Narsissus</h5>
+              <p class="card-text">
+                Softly blossom with the floral beauty of Narcissus.
+              </p>
+            </div>
+            <a href="/Homework-3/narsissus.html" class="btn btn-dark"
+              >See more</a
+            >
+          </div>
+        </div>
+        <div class="col">
+          <div class="card" style="width: 18rem">
+            <img
+              src="https://images2.imgbox.com/18/4e/LHimKmCW_o.jpg"
+              class="card-img-top"
+              alt="Echeveria"
+            />
+            <div class="card-body">
+              <h5 class="card-title">Echeveria</h5>
+              <p class="card-text">The star of Base Lace's Basic collection.</p>
+            </div>
+            <a href="/Homework-3/echeveria.html" class="btn btn-dark"
+              >See more</a
+            >
+          </div>
+        </div>
+        <div class="col">
+          <div class="card" style="width: 18rem">
+            <img
+              src="https://images2.imgbox.com/9c/e2/LojSnUAM_o.jpg"
+              class="card-img-top"
+              alt="Myosotis"
+            />
+            <div class="card-body">
+              <h5 class="card-title">Myosotis</h5>
+              <p class="card-text">
+                Appreciate the delicate angles of Myosotis's rhythm.
+              </p>
+            </div>
+            <a href="/Homework-3/myosotis.html" class="btn btn-dark"
+              >See more</a
+            >
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <br />
+    <hr class="dotted" />
+    <br />
+
+    <!-- Footer -->
+
+    <div class="footer">
+      <div class="container d-flex justify-content-center pb-3">
+        <div class="row">
+          <div class="col-md-3 pt-5 pb-3">
+            <h3 class="white">Address</h3>
+            <address class="white">
+              Centre of Koniakow Lace<br />Koniakow 704<br />43-474
+            </address>
+            <p class="white">
+              +48 535 328 291<br /><a
+                href="https://centrumkoronkikoniakowskiej.pl/"
+                class="links"
+                target="_blank"
+                >Centre of Koniakow Lace website</a
+              >
+            </p>
+          </div>
+          <div class="col-md-1 pt-4 pb-3"></div>
+          <div class="col-md-3 pt-5 pb-3">
+            <h3 class="white">Follow</h3>
+            <p class="white">
+              Our
+              <a
+                href="https://www.instagram.com/base_lace/"
+                class="links"
+                target="_blank"
+                >Instagram</a
+              >
+              will keep you updated, so you will not miss any news, offers and
+              new product releases.
+            </p>
+            <a
+              href="https://www.instagram.com/base_lace/"
+              class="btn btn-dark mt-2"
+              target="_blank"
+              >Check it out!</a
+            >
+          </div>
+          <div class="col-md-3 pt-4 pb-3"></div>
+          <div class="col-md-2 pt-5 pb-3">
+            <a href="/Homework-3/index.html">
+              <img
+                src="https://images2.imgbox.com/4d/02/3BxO9mPg_o.png"
+                alt="logo"
+                height="175px"
+            /></a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Copyrights -->
+
+    <div class="copyrights">
+      <div class="container-fluid d-flex justify-content-center pt-1 pb-1">
+        2022 &copy Base Lace | All rights reserved.
+      </div>
+    </div>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
